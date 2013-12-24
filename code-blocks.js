@@ -9,7 +9,7 @@ module.exports = function createTransform (types) {
   var last = ""
   var types = arrayify(types)
   var block = false;
-  var collector = through(function eachLine (line, enc, callback) {
+  var collector = through({objectMode: true}, function eachLine (line, enc, callback) {
     line = line.toString()
     var match = line.match(FENCE)
     if (match) {
