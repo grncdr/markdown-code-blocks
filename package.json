@@ -1,0 +1,32 @@
+{
+  "name": "markdown-code-blocks",
+  "version": "0.0.0",
+  "description": "Extract fenced code blocks from Markdown streams",
+  "main": "code-blocks.js",
+  "bin": "cmd.js",
+  "dependencies": {
+    "arrayify": "~1.0.0",
+    "duplexer": "~0.1.1",
+    "split": "~0.2.10",
+    "through2": "~0.2.3"
+  },
+  "devDependencies": {
+    "tape": "~1.0.4",
+    "concat-stream": "~1.2.1"
+  },
+  "scripts": {
+    "test": "node cmd.js -t javascript < README.md | node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/substack/markdown-code-blocks.git"
+  },
+  "homepage": "https://github.com/substack/markdown-code-blocks",
+  "keywords": [
+    "markdown",
+    "code-block",
+    "code"
+  ],
+  "author": "Stephen Sugden <me@stephensugden.com>",
+  "license": "MIT"
+}
