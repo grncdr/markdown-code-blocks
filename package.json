@@ -1,6 +1,6 @@
 {
   "name": "markdown-code-blocks",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Extract fenced code blocks from Markdown streams",
   "main": "code-blocks.js",
   "bin": "cmd.js",
